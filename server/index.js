@@ -46,7 +46,6 @@ app.get("/", (req, res) => {
   res.send("Server is running 🚀");
 });
 
-// ✅ Use Render’s PORT or fallback to 3001
 const PORT = process.env.PORT || 3001;
 server.listen(PORT, () => {
   console.log(`SERVER RUNNING on port ${PORT}`);
